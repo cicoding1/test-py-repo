@@ -10,10 +10,7 @@
         function triggerPipeline() {
  fetch('http://127.0.0.1:5000/trigger-pipeline', {
   method: 'POST',
- headers: {
-  'Authorization': 'Bearer my-super-secret-token',
-  'Content-Type': 'application/json'
-}
+
 })
   .then(res => res.json())
   .then(data => {
